@@ -1,0 +1,13 @@
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix\bin\Debug\netstandard2.0\CineMix.deps.json
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix\bin\Debug\netstandard2.0\CineMix.dll
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix\bin\Debug\netstandard2.0\ref\CineMix.dll
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix\bin\Debug\netstandard2.0\CineMix.pdb
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix\obj\Debug\netstandard2.0\CineMix.csprojAssemblyReference.cache
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix\obj\Debug\netstandard2.0\CineMix.AssemblyInfoInputs.cache
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix\obj\Debug\netstandard2.0\CineMix.AssemblyInfo.cs
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix\obj\Debug\netstandard2.0\CineMix.dll
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix\obj\Debug\netstandard2.0\ref\CineMix.dll
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix\obj\Debug\netstandard2.0\CineMix.pdb

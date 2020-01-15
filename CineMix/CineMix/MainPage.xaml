@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CineMix.MainPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+            <!-- Place new controls here -->
+            <StackLayout Style="{StaticResource Cabecalho}">
+                <Label Text="CINEMIX" Style="{StaticResource TituloApp}"/>
+                <Label Text="Seu app de cinema" Style="{StaticResource SubTitulo}"/>
+            </StackLayout>
+                <StackLayout Style="{StaticResource Body}">
+                    <Label Text="Lançamento" Style="{StaticResource Lancamento}"/>
+                    <Label Text="Sonic" Style="{StaticResource TituloFilme}"/>
+                    <!--Todo grid possue linha(RowDefinitions) e coluna(ColumnDefinitions)-->
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <!--É preciso configurar a linha-->
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <!--É preciso configurar a coluna-->
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="SalaDeCinema.png" HeightRequest="350" Aspect="AspectFit" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"/>
+                        <!--O  Aspect="AspectFill" significa que queremos que a imagem fique com 
+                    aspecto dela porém deixe ela preencha o maximo possivel-->
+
+                        <StackLayout Spacing="20" Margin="0,0,0,10" Orientation="Horizontal" HorizontalOptions="Center"  VerticalOptions="End">
+                            <StackLayout Style="{StaticResource Horario}">
+                                <Label Text="10 horas" TextColor="#ffffff" />
+                            </StackLayout>
+                            <StackLayout Style="{StaticResource Horario}">
+                                <Label Text="15 horas" TextColor="#ffffff" />
+                            </StackLayout>
+                            <StackLayout Style="{StaticResource Horario}" >
+                                <Label Text="21 horas" TextColor="#ffffff" />
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                    <StackLayout BackgroundColor="Transparent"  HeightRequest="100" HorizontalOptions="Center" WidthRequest="570">
+                        <Label Text="Sinopse" Style="{StaticResource Lancamento}"/>
+                        <Label Text="Sonic, o porco-espinho azul mais famoso do mundo, se junta com os seus amigos para derrotar o terrível Doutor Eggman,
+um cientista louco que planeja dominar o mundo, e o Doutor Robotnik,
+responsável por aprisionar animais inocentes em robôs." TextColor="#ffffff" FontSize="10" FontAttributes="Bold" FontFamily="Segoe UI"/>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="Transparent">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="buttonValor1.png" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" HeightRequest="80" />
+                            <Image Source="buttonValor1.png" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" HeightRequest="80" />
+                            <Label Text="Inteira R$: 30" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Comic Sans MS"/>
+                            <Label Text="Meia R$: 15" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Comic Sans MS"/>
+                            <Button BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0"/>
+                            <Button BackgroundColor="Transparent" Grid.Row="0" Grid.Column="1"/>
+                        </Grid>
+
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,1 @@
+C:\Users\cida_\source\repos\CineMix\CineMix\CineMix.UWP\CineMix.UWP.csproj;x86

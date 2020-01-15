@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CineMix.App">
+    <Application.Resources>
+        <!--Ciraremos um Resouce Global, SENDO QUE ISSO SERA NOSSO STYLE PARA TODAS NOSSAS PAGINAS-->
+        <ResourceDictionary>
+            <!--Aqui estamos criando as propriedades do nosso Titulo-->
+            <Style x:Key="Cabecalho" TargetType="StackLayout">
+                <Setter Property="Padding" Value="10" />
+                <Setter Property="Spacing" Value="0" />
+            </Style>
+            <Style x:Key="Body" TargetType="StackLayout">
+                <Setter Property="Padding" Value="10" />
+                <Setter Property="BackgroundColor" Value="#6a3480"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+            </Style>
+            
+            <Style x:Key="Titulo" TargetType="Label">
+                <Setter Property="FontFamily" Value="Segoe UI"/>
+                <Setter Property="TextColor" Value="#6a3480" />
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            </Style>
+            <Style x:Key="TituloApp" TargetType="Label" BasedOn="{StaticResource Titulo}">
+                <!--BasedOn="{StaticResource Titulo} ESTAMOS HERDANDO AS INFORMAÇÕES DO STYLE TITULO-->
+                <Setter Property="FontSize" Value="24"/>
+            </Style>
+            <Style x:Key="SubTitulo" TargetType="Label" BasedOn="{StaticResource Titulo}">
+                <!--BasedOn="{StaticResource Titulo}" ESTAMOS HERDANDO AS INFORMAÇÕES DO STYLE TITULO -->
+                <Setter Property="FontSize" Value="12"/>
+            </Style>
+            <Style x:Key="Lancamento" TargetType="Label" BasedOn="{StaticResource SubTitulo}">
+                <!--BasedOn="{StaticResource SubTitulo}" ESTAMOS HERDANDO AS INFORMAÇÕES DO STYLE TITULO -->
+                <Setter Property="TextColor" Value="#947AC4"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="HorizontalOptions" Value="Start" />
+                <Setter Property="VerticalOptions" Value="Start"/>
+            </Style>
+            <Style x:Key="TituloFilme" TargetType="Label" BasedOn="{StaticResource SubTitulo}">
+                <!--BasedOn="{StaticResource Titulo}" ESTAMOS HERDANDO AS INFORMAÇÕES DO STYLE TITULO -->
+                <Setter Property="TextColor" Value="#FFFFFF"/>
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, ios" Value="24"/>
+                            <On Platform="UWP" Value="64"/>
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+            <Style x:Key="Horario" TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="#947AC4"/>
+                <Setter Property="Padding" Value="15, 7"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
